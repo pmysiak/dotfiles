@@ -17,6 +17,6 @@ git checkout -f main
 By default everything is ignored by .gitignore
 
 ```bash
-git add -f .zshrc
+git add .zshrc
 ```
 
