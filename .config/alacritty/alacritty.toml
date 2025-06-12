@@ -1,0 +1,29 @@
+[colors.normal]
+black = "#171421"
+blue = "#12488B"
+cyan = "#2AA1B3"
+green = "#26A269"
+magenta = "#A347BA"
+red = "#C01C28"
+white = "#D0CFCC"
+yellow = "#A2734C"
+
+[font]
+size = 12
+
+[font.normal]
+family = "RobotoMono Nerd Font"
+style = "Regular"
+
+[window.padding]
+x = 1
+y = 1
+
+[keyboard]
+# Remap Ctrl + {key} to arrows, H -> Right, J -> Down, K -> Up and L -> Right
+bindings = [
+  { key = "H", mods = "Control", chars = "\u001b[D" },
+  { key = "J", mods = "Control", chars = "\u001b[B" },
+  { key = "K", mods = "Control", chars = "\u001b[A" },
+  { key = "L", mods = "Control", chars = "\u001b[C" },
+]

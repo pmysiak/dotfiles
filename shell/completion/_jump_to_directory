@@ -1,0 +1,20 @@
+#compdef _jump_to_directory jump_to_directory
+
+_jump_to_directory() {
+  if [[ "${words[2]}" == "-" ]]; then
+    _cd
+
+    return
+  fi
+
+  local -a options=()
+
+  for shortcut directory in "${(@kv)JUMP_TO_DIRECTORIES_LIST}"; do
+    options+=("$shortcut:$directory")
+  done
+
+  _describe 'directories' options
+}
+
+_jump_to_directory "$@"
+

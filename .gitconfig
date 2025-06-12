@@ -1,0 +1,16 @@
+[user]
+    email = peter.mysiak@gmail.com
+    name = Peter Myšiak
+[core]
+    autocrlf = input
+    pager = "less -F"
+    excludesFile = ~/.gitignore
+    editor = ~/nvim-linux-x86_64/bin/nvim
+[pull]
+    rebase = true
+[gc]
+    auto = 0
+[diff]
+    tool = meld
+[init]
+    defaultBranch = main
