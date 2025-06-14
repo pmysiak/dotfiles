@@ -7,6 +7,13 @@ return {
             keymap = {
                 -- Insert item on enter
                 preset = "enter",
+
+                -- First <C-c> key press hide completion menu,
+                -- second one fallback to neovim keymap
+                ["<C-c>"] = { "hide", "fallback" },
+
+                -- Accept item on tab key
+                ["<Tab>"] = { "accept", "fallback" },
             },
             completion = {
                 list = {
@@ -14,6 +21,8 @@ return {
                     max_items = 50,
 
                     selection = {
+                        -- When `true`, preselect first item in the list
+                        preselect = true,
                         -- When `true`, inserts the completion item automatically
                         -- when selecting it
                         auto_insert = false,

@@ -7,8 +7,8 @@
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
-    "modules-center": [],
-    "modules-right": ["tray", "sndio", "pulseaudio", "network", "cpu", "temperature", "memory", "keyboard-state", "battery#bat2", "sway/language", "clock", "battery"],
+    "modules-center": ["tray", "sndio", "pulseaudio", "network", "cpu", "temperature", "memory"],
+    "modules-right": ["keyboard-state", "battery#bat2", "sway/language", "clock", "battery"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,

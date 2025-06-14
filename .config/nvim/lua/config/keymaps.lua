@@ -46,3 +46,7 @@ vim.keymap.set("n", "<C-up>", ":resize -3<cr>", { silent = true })
 vim.keymap.set("n", "<C-down>", ":resize +3<cr>", { silent = true })
 vim.keymap.set("n", "<C-left>", ":vertical resize -3<cr>", { silent = true })
 vim.keymap.set("n", "<C-right>", ":vertical resize +3<cr>", { silent = true })
+
+-- Save all files
+vim.keymap.set("n", "<C-s>", "<cmd>wall<cr>")
+
