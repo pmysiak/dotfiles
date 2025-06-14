@@ -1,2 +1,4 @@
-*
+# Don't uncomment "*" because it has side effect on all repositories in ~/projects/
+# after uncomment it will ignore every new untracked file
+# *
 
