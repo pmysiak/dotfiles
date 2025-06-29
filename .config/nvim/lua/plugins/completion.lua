@@ -23,6 +23,7 @@ return {
                     selection = {
                         -- When `true`, preselect first item in the list
                         preselect = true,
+
                         -- When `true`, inserts the completion item automatically
                         -- when selecting it
                         auto_insert = false,

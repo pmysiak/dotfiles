@@ -5,12 +5,6 @@
 -- Clear highlights on search when pressing <Ctrl-c> in normal mode
 vim.keymap.set('n', '<C-c>', '<cmd>nohlsearch<CR>')
 
--- Disable arrow keys in normal mode
-vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!"<cr>')
-vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!"<cr>')
-vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!"<cr>')
-vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!"<cr>')
-
 -- Save and quit (close) all windows
 vim.keymap.set("n", "<leader>qq", "<cmd>wqall<cr>")
 
