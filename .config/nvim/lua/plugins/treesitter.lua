@@ -37,7 +37,9 @@ return {
     {
         "nvim-treesitter/nvim-treesitter-context",
         version = false,
-        opts = {},
+        opts = {
+            multiline_threshold = 1,
+        },
     },
     {
         "windwp/nvim-ts-autotag",
