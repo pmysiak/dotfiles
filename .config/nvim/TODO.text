@@ -1,1 +1,5 @@
+- ked som dal vyhladat workspace symbol processforeign tak mi nic nenaslo, malo najst 2 metody v environmente
+    - storm to najde ak ked zadam procefore, cize vynecham nejake pismena medzi slovami
+- doplnit snippety, potom mi po napisani this doplni $this->
+- ked yanknem viac riadkov tak zobrazi message, toto zrusit
 

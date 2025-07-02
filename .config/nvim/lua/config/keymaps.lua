@@ -32,7 +32,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Don't copy to register after delete
-vim.keymap.set({ "n", "x" }, "x", '"_x')
+vim.keymap.set("n", "x", '"_x')
 vim.keymap.set({ "n", "x" }, "d", '"_d')
 
 -- Resize current window
