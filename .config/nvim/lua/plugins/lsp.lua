@@ -1,37 +1,24 @@
 return {
     {
-        "williamboman/mason.nvim",
-        version = false,
-        config = function()
-            require("mason").setup()
-        end
-    },
-    {
-        "williamboman/mason-lspconfig.nvim",
-        version = false,
-        config = function()
-            require("mason-lspconfig").setup {
-                -- List of configs from nvim-lspconfig
-                ensure_installed = {
-                    "lua_ls",
-                    "phpactor",
-                },
-            }
-        end
-    },
-    {
-        "neovim/nvim-lspconfig",
+        "mason-org/mason-lspconfig.nvim",
         version = false,
         dependencies = {
-            "williamboman/mason.nvim",
-            "williamboman/mason-lspconfig.nvim",
+            {
+                "mason-org/mason.nvim",
+                version = false,
+                opts = {},
+            },
+            {
+                "neovim/nvim-lspconfig",
+                version = false,
+            },
         },
-        config = function()
+        opts = {
             -- List of configs from nvim-lspconfig
-            vim.lsp.enable({
+            ensure_installed = {
                 "lua_ls",
                 "phpactor",
-            })
-        end
+            },
+        },
     }
 }
