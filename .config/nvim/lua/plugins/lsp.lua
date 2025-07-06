@@ -20,5 +20,18 @@ return {
                 "phpactor",
             },
         },
-    }
+    },
+    {
+        "neovim/nvim-lspconfig",
+        version = false,
+        config = function()
+            vim.lsp.config(
+                "phpactor",
+                {
+                    -- cmd = vim.lsp.rpc.connect('127.0.0.1', tonumber(8888))
+                    cmd = {"docker", "exec", "-i", "phpactor-php-1", "bin/phpactor", "language-server"},
+                }
+            )
+        end
+    },
 }
