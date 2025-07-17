@@ -40,16 +40,16 @@ return {
                     },
                 },
             },
-            tabline = {
-                lualine_a = {
-                    {
-                        "filename",
-                        path = 1, -- Relative path 
-                        shorting_target = 0,
-                        icon = {""},
-                    },
-                },
-            },
+            -- tabline = {
+            --     lualine_a = {
+            --         {
+            --             "filename",
+            --             path = 1, -- Relative path 
+            --             shorting_target = 0,
+            --             icon = {""},
+            --         },
+            --     },
+            -- },
         },
     }
 }

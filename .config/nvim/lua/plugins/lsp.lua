@@ -25,6 +25,9 @@ return {
         "neovim/nvim-lspconfig",
         version = false,
         config = function()
+            -- Logging debug messages to ~/.local/state/nvim/lsp.log
+            vim.lsp.set_log_level("debug")
+
             vim.lsp.config(
                 "phpactor",
                 {
