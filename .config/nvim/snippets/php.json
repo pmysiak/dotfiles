@@ -1,0 +1,14 @@
+{
+    "$this->": {
+        "prefix": "this",
+        "body": "\\$this->$0;"
+    },
+    "function __construct": {
+        "prefix": "con",
+        "body": [
+            "public function __construct(",
+            "\t$0",
+            ") {}"
+        ]
+    }
+}

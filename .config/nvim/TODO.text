@@ -2,4 +2,4 @@
     - storm to najde ak ked zadam procefore, cize vynecham nejake pismena medzi slovami
 - doplnit snippety, potom mi po napisani this doplni $this->
 - ked yanknem viac riadkov tak zobrazi message, toto zrusit
-- nvim tree by default riesi gitignore a nezobrazuje vsetko co je v gitignore
+- nvim tree by default riesi gitignore a nezobrazi to co je v gitignore
