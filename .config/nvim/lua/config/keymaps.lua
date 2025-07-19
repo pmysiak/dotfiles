@@ -5,8 +5,8 @@
 -- Clear highlights on search when pressing <Ctrl-c> in normal mode
 vim.keymap.set('n', '<C-c>', '<cmd>nohlsearch<CR>')
 
--- Save and quit (close) all windows
-vim.keymap.set("n", "<leader>qq", "<cmd>wqall<cr>")
+-- Save and quit (close) all buffers
+vim.keymap.set("n", "<leader>qq", "<cmd>wqall<cr>", { desc = "Save and quit all buffers" })
 
 -- Ctrl-c to escape to normal mode
 vim.keymap.set({"i", "x"}, "<C-c>", "<Esc>")
@@ -44,3 +44,30 @@ vim.keymap.set("n", "<C-right>", ":vertical resize +3<cr>", { silent = true })
 -- Save all files
 vim.keymap.set("n", "<C-s>", "<cmd>wall<cr>")
 
+-- Insert newline without entering insert mode (support counter)
+vim.keymap.set(
+    "n",
+    "<leader>o",
+    function()
+        local count = vim.v.count > 0 and vim.v.count or 1
+        local line = vim.fn.line('.')
+        local empty_lines = {}
+        for _ = 1, count do table.insert(empty_lines, "") end
+
+        vim.api.nvim_buf_set_lines(0, line, line, false, empty_lines)
+    end,
+    { desc = "Insert newline below" }
+)
+vim.keymap.set(
+    "n",
+    "<leader>O",
+    function()
+        local count = vim.v.count > 0 and vim.v.count or 1
+        local line = vim.fn.line('.') - 1
+        local empty_lines = {}
+        for _ = 1, count do table.insert(empty_lines, "") end
+
+        vim.api.nvim_buf_set_lines(0, line, line, false, empty_lines)
+    end,
+    { desc = "Insert newline above" }
+)

@@ -3,3 +3,5 @@
 - doplnit snippety, potom mi po napisani this doplni $this->
 - ked yanknem viac riadkov tak zobrazi message, toto zrusit
 - nvim tree by default riesi gitignore a nezobrazi to co je v gitignore
+- dorobit aby ctrl+d a ctrl+u sa posuvali animovane
+

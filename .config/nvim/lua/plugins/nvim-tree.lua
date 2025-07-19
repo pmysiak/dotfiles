@@ -24,7 +24,7 @@ local function my_on_attach(bufnr)
         function()
             api.tree.find_file({buf = vim.fn.bufnr("#")})
         end,
-        opts("Focus opened file")
+        opts("Focus current buffer")
     )
 end
 
@@ -54,7 +54,7 @@ return {
         end,
         keys = {
             {
-                "<leader>e", "<cmd>NvimTreeToggle<cr>",
+                "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "File explorer",
             },
         },
     },

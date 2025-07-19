@@ -96,6 +96,7 @@ return {
             {
                 "<leader>ff",
                 "<cmd>Telescope find_files hidden=true<cr>",
+                desc = "Find files",
             },
             {
                 "<leader>fg",
@@ -113,6 +114,7 @@ return {
 
                     require("telescope.builtin").live_grep(opts)
                 end,
+                desc = "Find in files",
             },
             {
                 "<leader>fg",
@@ -122,34 +124,42 @@ return {
                         default_text = require("merlin.editor").get_selected_text(),
                     })
                 end,
+                desc = "Find in files",
             },
             {
                 "<leader>b",
                 "<cmd>Telescope buffers sort_lastused=true sort_mru=true<cr>",
+                desc = "Buffers",
             },
             {
                 "<leader>fh",
                 "<cmd>Telescope help_tags<cr>",
+                desc = "Help tags"
             },
             {
-                "gr",
+                "gj",
                 "<cmd>Telescope lsp_references<cr>",
+                desc = "Show references",
             },
             {
                 "go",
                 "<cmd>Telescope lsp_document_symbols<cr>",
+                desc = "File symbol (buffer)",
             },
             {
                 "<leader>fs",
                 "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
+                desc = "Find symbol (project)",
             },
             {
                 "gi",
                 "<cmd>Telescope lsp_implementations<cr>",
+                desc = "Show implementations",
             },
             {
                 "gd",
                 "<cmd>Telescope lsp_definitions<cr>",
+                desc = "Go to definition",
             },
         }
     },

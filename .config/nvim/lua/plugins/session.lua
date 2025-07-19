@@ -7,6 +7,7 @@ return {
             {
                 "<leader>so",
                 "<cmd>SessionSearch<cr>",
+                desc = "Sessions",
             },
         }
     }
