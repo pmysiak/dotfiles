@@ -67,5 +67,5 @@ vim.opt.undolevels = 10000
 vim.opt.colorcolumn = "121"
 
 -- Session (recommended by rmagatti/auto-session plugin)
-vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 

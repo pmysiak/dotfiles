@@ -4,6 +4,7 @@ return {
         event = "VeryLazy",
         opts = {
             expand = 5,
+            delay = 1000,
         },
         keys = {
             {

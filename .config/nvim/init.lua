@@ -9,4 +9,3 @@ require("config.autocmds")
 
 -- Load plugins
 require("config.lazy")
-

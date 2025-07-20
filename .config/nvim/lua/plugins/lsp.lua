@@ -25,6 +25,17 @@ return {
         "neovim/nvim-lspconfig",
         version = false,
         config = function()
+            -- Default diagnostic config
+            vim.diagnostic.config({
+                underline = true,
+                virtual_text = false,
+                virtual_lines = {
+                    current_line = true,
+                },
+                update_in_insert = true,
+                severity_sort = true,
+            })
+
             -- Logging debug messages to ~/.local/state/nvim/lsp.log
             vim.lsp.set_log_level("debug")
 

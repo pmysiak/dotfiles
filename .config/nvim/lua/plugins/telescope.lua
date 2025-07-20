@@ -7,6 +7,7 @@ return {
         },
         config = function()
             local actions = require("telescope.actions")
+            local open_with_trouble = require("trouble.sources.telescope").open()
 
             require("telescope").setup({
                 defaults = {
@@ -40,8 +41,12 @@ return {
                         "--fixed-strings", -- Disable regular expression matching and treat the pattern as a literal string 
                     },
                     mappings = {
+                        n = {
+                            ["<C-t>"] = open_with_trouble,
+                        },
                         i = {
                             ["<Esc>"] = actions.close,
+                            ["<C-t>"] = open_with_trouble,
                         },
                     },
                 },
