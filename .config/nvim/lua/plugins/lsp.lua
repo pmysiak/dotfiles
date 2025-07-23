@@ -42,6 +42,19 @@ return {
             vim.lsp.config(
                 "phpactor",
                 {
+                    init_options = {
+                        ["language_server_configuration.auto_config"] = false,
+                        ["language_server_phpstan.enabled"] = false,
+                        ["language_server_psalm.enabled"] = false,
+                        ["language_server_php_cs_fixer.enabled"] = false,
+                        ["php_code_sniffer.enabled"] = false,
+                        ["blackfire.enabled"] = false,
+                        ["prophecy.enabled"] = false,
+                        ["behat.enabled"] = false,
+                        ["symfony.enabled"] = false,
+                        ["phpunit.enabled"] = false,
+                    },
+
                     -- cmd = vim.lsp.rpc.connect('127.0.0.1', tonumber(8888))
                     cmd = {"docker", "exec", "-i", "phpactor-php-1", "bin/phpactor", "language-server"},
                 }

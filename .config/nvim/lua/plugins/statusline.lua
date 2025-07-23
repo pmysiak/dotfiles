@@ -15,7 +15,12 @@ return {
             sections = {
                 lualine_a = {"mode"},
                 lualine_b = {"branch", "diff"},
-                lualine_c = {"diagnostics"},
+                lualine_c = {
+                    {
+                        "diagnostics",
+                        update_in_insert = true,
+                    },
+                },
                 lualine_x = {
                     {
                         require("lazy.status").updates,

@@ -119,7 +119,7 @@ return {
 
                     require("telescope.builtin").live_grep(opts)
                 end,
-                desc = "Find in files",
+                desc = "Find in files (grep)",
             },
             {
                 "<leader>fg",
@@ -129,7 +129,7 @@ return {
                         default_text = require("merlin.editor").get_selected_text(),
                     })
                 end,
-                desc = "Find in files",
+                desc = "Find in files (grep)",
             },
             {
                 "<leader>b",
@@ -149,12 +149,12 @@ return {
             {
                 "go",
                 "<cmd>Telescope lsp_document_symbols<cr>",
-                desc = "File symbol (buffer)",
+                desc = "Buffer symbols",
             },
             {
                 "<leader>fs",
                 "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
-                desc = "Find symbol (project)",
+                desc = "Project symbols",
             },
             {
                 "gi",
