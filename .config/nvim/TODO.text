@@ -3,8 +3,9 @@
 - ked yanknem viac riadkov tak zobrazi message, toto zrusit
 - nvim tree by default riesi gitignore a nezobrazi to co je v gitignore
 - ked pridem kurzorom na slovo, tak nech zvyrazni vsetky vyskyty
-- vyskusat 
+- vyskusat
     -- Remap remove word to ctrl + backspace (used on system)
     vim.keymap.set("i", "<C-BS>", "<C-w>")
 - poriesit vim.opt.autowrite aby sa ulozilo vsetko co najskor a potom mozem
     dat backup a swapfile prec
+- poriesit spell checking
