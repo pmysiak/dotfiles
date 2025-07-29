@@ -9,3 +9,6 @@
 - poriesit vim.opt.autowrite aby sa ulozilo vsetko co najskor a potom mozem
     dat backup a swapfile prec
 - poriesit spell checking
+- ked otvorim zoznam bufferov a zacnem filtrovat,
+    tak nech je selectnuty prvy zaznam
+- dosetupovat conform, stylua nefunguje ani php
