@@ -5,6 +5,12 @@ vim.g.localleader = " "
 -- File encoding
 vim.opt.fileencoding = "utf-8"
 
+-- Auto-saving buffers (see also autocmds.lua)
+vim.o.autowriteall = true
+vim.o.backup = false
+vim.o.writebackup = false
+vim.o.swapfile = false
+
 -- Make line numbers default
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -63,9 +69,12 @@ vim.opt.title = true
 -- File changes history
 vim.opt.undolevels = 10000
 
--- Highlight 121th column
+-- Highlight 121st column
 vim.opt.colorcolumn = "121"
 
 -- Session (recommended by rmagatti/auto-session plugin)
 vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
+-- Spelling
+-- spell checker checks only comments and strings, no code at all (variables, methods, etc)
+vim.o.spell = false

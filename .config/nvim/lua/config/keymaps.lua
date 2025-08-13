@@ -71,3 +71,7 @@ vim.keymap.set(
     end,
     { desc = "Insert newline above" }
 )
+
+-- Remove word before cursor
+-- Remap to <C-w> doesn't work in telescope prompt
+vim.keymap.set("i", "<C-BS>", "<C-S-w>")

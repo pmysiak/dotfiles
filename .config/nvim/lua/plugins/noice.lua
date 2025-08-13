@@ -39,6 +39,18 @@ return {
                     },
                 },
             },
+            routes = {
+                {
+                    -- Turn off notifications like "8 lines yanked"
+                    filter = { event = "msg_show", find = "lines yanked" },
+                    opts = { skip = true },
+                },
+                {
+                    -- Turn off notifications like "8 fewer lines"
+                    filter = { event = "msg_show", find = "fewer lines" },
+                    opts = { skip = true },
+                },
+            },
         },
     }
 }

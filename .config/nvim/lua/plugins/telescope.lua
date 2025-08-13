@@ -12,6 +12,7 @@ return {
             require("telescope").setup({
                 defaults = {
                     sorting_strategy = "ascending",
+                    selection_strategy = "closest",
                     layout_strategy = "flex",
                     layout_config = {
                         width = 0.9,
@@ -35,10 +36,10 @@ return {
                         "--line-number",
                         "--column",
                         "--smart-case",
-                        "--trim", -- Trim indentation from beginning 
-                        "--hidden", -- Search also hidden files and directories 
+                        "--trim", -- Trim indentation from beginning
+                        "--hidden", -- Search also hidden files and directories
                         -- "--no-ignore", -- Ignore files such as .gitignore, .ignore, .rgignore
-                        "--fixed-strings", -- Disable regular expression matching and treat the pattern as a literal string 
+                        "--fixed-strings", -- Disable regular expression matching and treat the pattern as a literal string
                     },
                     mappings = {
                         n = {
@@ -108,7 +109,7 @@ return {
                 mode = {"n"},
                 function()
                     local opts = {
-                        default_text = vim.fn.expand("<cword>"),
+                        -- default_text = vim.fn.expand("<cword>"),
                     }
 
                     if require("nvim-tree.api").tree.is_visible() then

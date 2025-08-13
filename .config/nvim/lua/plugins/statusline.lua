@@ -18,7 +18,7 @@ return {
                 lualine_c = {
                     {
                         "diagnostics",
-                        update_in_insert = true,
+                        update_in_insert = false,
                     },
                 },
                 lualine_x = {
@@ -49,7 +49,7 @@ return {
             --     lualine_a = {
             --         {
             --             "filename",
-            --             path = 1, -- Relative path 
+            --             path = 1, -- Relative path
             --             shorting_target = 0,
             --             icon = {""},
             --         },
@@ -58,4 +58,3 @@ return {
         },
     }
 }
-

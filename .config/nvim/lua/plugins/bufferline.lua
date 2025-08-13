@@ -8,7 +8,7 @@ return {
 
             return {
                 options = {
-                    style_preset = bufferline.style_preset.no_italic,
+                    styledd_preset = bufferline.style_preset.no_italic,
                     indicator = {
                         style = "none",
                     },

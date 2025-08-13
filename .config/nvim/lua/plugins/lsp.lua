@@ -32,7 +32,7 @@ return {
                 virtual_lines = {
                     current_line = true,
                 },
-                update_in_insert = true,
+                update_in_insert = false,
                 severity_sort = true,
             })
 
@@ -51,12 +51,13 @@ return {
                         ["blackfire.enabled"] = false,
                         ["prophecy.enabled"] = false,
                         ["behat.enabled"] = false,
-                        ["symfony.enabled"] = false,
-                        ["phpunit.enabled"] = false,
+                        ["symfony.enabled"] = true,
+                        ["phpunit.enabled"] = true,
                     },
 
                     -- cmd = vim.lsp.rpc.connect('127.0.0.1', tonumber(8888))
-                    cmd = {"docker", "exec", "-i", "phpactor-php-1", "bin/phpactor", "language-server"},
+                    -- cmd = {"docker", "exec", "-i", "phpactor-php-1", "bin/phpactor", "language-server"},
+                    cmd = {"/home/merlin/projects/phpactor/bin/phpactor", "language-server"},
                 }
             )
         end
